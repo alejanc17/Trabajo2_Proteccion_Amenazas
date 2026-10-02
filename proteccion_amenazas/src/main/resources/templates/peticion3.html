@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 3</title>
+    <style>
+        body { background-color: #ffe6f2; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .contenedor { background-color: white; padding: 30px 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2); border-top: 6px solid #ff66b2; max-width: 600px; width: 100%; }
+        h1 { color: #d63384; text-align: center; margin-bottom: 25px; font-size: 28px; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #fff0f5; margin: 8px 0; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #ff99cc; font-size: 16px; font-weight: 500;}
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <h1>Punto 3: Tipos de Amenaza</h1>
+    <ul>
+        <li th:each="tipo : ${tipos}" th:text="${tipo}"></li>
+    </ul>
+</div>
+</body>
+</html>

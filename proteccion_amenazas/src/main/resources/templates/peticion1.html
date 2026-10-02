@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 1</title>
+    <style>
+        body { background-color: #ffe6f2; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .contenedor { background-color: white; padding: 30px 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2); border-top: 6px solid #ff66b2; max-width: 600px; width: 100%; text-align: center; }
+        h1 { color: #d63384; margin-bottom: 25px; font-size: 28px; }
+        .caja-texto { background-color: #fff0f5; padding: 15px; border-radius: 8px; border-left: 5px solid #ff99cc; font-size: 18px; margin-top: 20px; }
+        strong { color: #c2185b; }
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <h1>Punto 1: Nombres de las clases concretas</h1>
+    <div class="caja-texto">
+        <p><strong>Nombres:</strong> <span th:text="${nombresStr}"></span></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal - Trabajo 2</title>
+    <style>
+        body { background-color: #ffe6f2; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .contenedor { background-color: white; padding: 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2); border-top: 6px solid #ff66b2; max-width: 500px; width: 100%; text-align: center; }
+        h1 { color: #d63384; margin-bottom: 10px; font-size: 28px; }
+        p { color: #666; margin-bottom: 30px; font-size: 16px; }
+        .menu-botones { display: flex; flex-direction: column; gap: 15px; }
+        .boton { background-color: #ff99cc; color: #c2185b; text-decoration: none; padding: 15px; border-radius: 8px; font-size: 18px; font-weight: bold; transition: background-color 0.3s, transform 0.2s; display: block; border: 2px solid #ff66b2; }
+        .boton:hover { background-color: #ff66b2; color: white; transform: scale(1.02); }
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <h1>Trabajo 2: Polimorfismo</h1>
+    <p>Seleccione algún punto:</p>
+
+    <div class="menu-botones">
+        <a href="/peticion1" class="boton">Punto 1: Nombres de Clases</a>
+        <a href="/peticion2" class="boton">Punto 2: Estadísticas de Peligro</a>
+        <a href="/peticion3" class="boton">Punto 3: Tipos de Amenaza</a>
+        <a href="/peticion4" class="boton">Punto 4: Consultas anyMatch y noneMatch</a>
+        <a href="/peticion5" class="boton">Punto 5: Amenaza Mayor</a>
+    </div>
+</div>
+</body>
+</html>
